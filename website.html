@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NAVADEV SANTHOSH KUMAR | Personal Website</title>
+    <style>
+        /* Reset & general */
+        * {margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        body {background-color: #f0f4f8; color: #333;}
+        a {text-decoration: none; color: inherit; cursor: pointer;}
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        nav ul li {
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        nav ul li:hover {
+            background-color: #2575fc;
+            color: white;
+        }
+
+        /* Content */
+        .content {
+            padding: 40px 20px;
+            min-height: 400px;
+            text-align: center;
+        }
+        .content h2 {
+            margin-bottom: 20px;
+            color: #2575fc;
+        }
+        .content p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        /* Section colors */
+        #home {background-color: #E6E6FA;}
+        #hobbies {background-color: #E6E6FA;}
+        #qualifications {background-color: #E6E6FA;}
+        #extracurricular {background-color:#E6E6FA;}
+        #homeDetails {background-color: #E6E6FA;}
+        #contact {background-color:#E6E6FA;}
+    </style>
+</head>
+<body>
+
+    <header>
+        Navadev Santhosh Kumar
+    </header>
+
+    <nav>
+        <ul>
+            <li onclick="showSection('home')">Home</li>
+            <li onclick="showSection('hobbies')">Hobbies</li>
+            <li onclick="showSection('qualifications')">Qualifications</li>
+            <li onclick="showSection('extracurricular')">Extra Curricular</li>
+            <li onclick="showSection('homeDetails')">My Home</li>
+            <li onclick="showSection('contact')">Contact Me</li>
+        </ul>
+    </nav>
+
+    <div class="content" id="content">
+        <!-- Dynamic content goes here -->
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+            <p>Hello! I'm <b>Navadev Santhosh</b>, a passionate <b> BBA F&B</B> student exploring the world of startup and entreprenuership.<br> 
+I’ve always been drawn to business because it feels like a mix of creativity and problem-solving.<br>
+For me, business isn’t just about profit; it’s about taking an idea, shaping it, and turning it into something real.<br>
+In the future, I’d love to try building my own projects, maybe even a startup, and see how far I can take my ideas. </p>
+<img src='chtimg.jpg' height='250 px' width='250 px'   ><style>.chtimg-img {
+  cursor: pointer;
+}</style></img> <br> <br>
+
+        </section>
+
+        <section id="hobbies" style="display:none;">
+            <h2>My Hobbies</h2>
+            <p>I love dancing, reading tech blogs, playing football, and exploring new places in my free time.</p>
+<img src='chtimg2.jpg' height='250 px' width='250 px'></img>
+        </section>
+
+        <section id="qualifications" style="display:none;">
+            <h2>My Qualifications</h2>
+            <p> I am currently pursuing  BBA F&B , with a keen interest in starting my own startup one day.
+My qualifications will be getting 96 in 12th boards also having small experience in the ecommerce field.
+<div class="points">
+    <ul>
+      <li class="success"><b> Started a small hoodie store that became profitable.</b></li>
+      <li>Focused on simple designs and affordable pricing.</li>
+     
+    <ul>
+      <li class="lessons"> Key Lessons Learned: Choosing the right niche matters more than chasing hype.</li>
+      						<li>Customer trust and reliability are more valuable than quick wins.</li>
+     					 <li>Failures teach as much as successes in business.</li>
+    </ul>
+  </div> 
+ 
+</p>
+        </section>
+
+        <section id="extracurricular" style="display:none;">
+            <h2>Extra Curricular Activities</h2>
+            <p>Participated in college fests, debate competitions, and volunteered in community events.</p>
+        </section>
+
+        <section id="homeDetails" style="display:none;">
+            <h2>My Home Details</h2>
+            <p>I live in <b> Kerala </b>, surrounded by lush greenery and peaceful backwaters.<br> It’s a cozy place that inspires creativity.
+In Kerala i reside in a place called mannuthy which is in the <b>Thrissur</b> district. <br>
+To be more exact near <b> Peechi Dam </b> </p>
+        </section>
+
+        <section id="contact" style="display:none;">
+            <h2>Contact Me</h2>
+            <p>Email:<b> navadevsk44@gmail.com </b><br>
+            Phone:<b> +91 9074139886 </b><br>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Navadev Santhosh. All rights reserved.
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content section');
+            sections.forEach(sec => sec.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
